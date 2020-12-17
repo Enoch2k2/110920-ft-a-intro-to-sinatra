@@ -1,0 +1,10 @@
+<h1>Movies List</h1>
+
+<!-- We need to fill in this file with data from our database -->
+
+<% @movies.each do |movie| %>
+    <div>
+        <h3>Title <%= movie.title %></h3>
+        <p>Rating: <%= movie.rating %></p>
+    </div>
+<% end %>
